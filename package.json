@@ -1,8 +1,8 @@
 {
-  "name": "react-keydown",
+  "name": "keydown",
   "version": "1.9.12",
-  "description": "Lightweight keydown wrapper for React components",
-  "main": "dist/index.js",
+  "description": "Lightweight keydown wrapper for R̶e̶a̶c̶t̶ components",
+  "main": "src/index.js",
   "jsnext:main": "es/index.js",
   "module": "es/index.js",
   "scripts": {
@@ -14,11 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/glortho/react-keydown.git"
+    "url": "git+https://github.com/tine20/keydown.git"
   },
   "keywords": [
-    "react",
-    "react-component",
+    "component",
     "decorator",
     "higher-order-component",
     "keypress",
@@ -36,9 +35,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/glortho/react-keydown/issues"
+    "url": "https://github.com/tine20/keydown/issues"
   },
-  "homepage": "https://github.com/glortho/react-keydown#readme",
+  "homepage": "https://github.com/tine20/keydown#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.5",
@@ -48,16 +47,10 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-1": "^6.24.1",
     "eslint": "^5.16.0",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2",
     "tap-difflet": "^0.4.0",
     "tape": "^4.10.1",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
-  },
-  "peerDependencies": {
-    "react": ">= 0.14.0",
-    "react-dom": ">= 0.14.0"
   },
   "dependencies": {
     "core-js": "^3.1.2"

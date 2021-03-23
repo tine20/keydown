@@ -1,9 +1,30 @@
+# WIP: Generalized Keydown (to be used in other frameworks)
+
+* This is a bref concept drawing to use this lib in [Tine 2.0](www.tine20.com) (Ext and Vue based).
+* I just wrapped out the static react bindings and it works well.
+* find demo in fmail (thunderbird shortcuts)
+  
+## `BUT`<sup>tm</sup>
+1. we need the possibility to have descriptions as well, e.g.
+
+   `@keydown('ctrl+n`, _('Create new record'))
+2. it should be possible to collect all shortcuts bellow a focusable and display the list
+3. it should be possible to pretty print key bindings for the usage info
+    1. like <kbd>Ctrl</kbd> + <kbd>N</kbd>
+    2. On a mac it should look like like <kbd>Cmd</kbd> + <kbd>N</kbd>
+    3. in de translations it should look like like <kbd>Strg</kbd> + <kbd>N</kbd>
+4. key-bindings should be configurable by the user
+5. not yet clear if the decorator pattern is the right one to coose
+    1. quite some work at page load ... before the user presses the first key
+    2. but the idea with binding all focusables is neat!
+
+
 <p align="center">
-  <a href="http://glortho.github.io/react-keydown/example/index.html" target="_blank"><img src="https://raw.githubusercontent.com/glortho/react-keydown/master/example/public/react-keydown-logo.png" /></a>
+  <a href="http://glortho.github.io/react-keydown/example/index.html" target="_blank"><img src="https://raw.githubusercontent.com/tine20/keydown/master/example/public/react-keydown-logo.png" /></a>
 </p>
 
-[![npm version](https://badge.fury.io/js/react-keydown.svg)](https://badge.fury.io/js/react-keydown)
-[![dependencies](https://david-dm.org/glortho/react-keydown.svg)](https://david-dm.org/glortho/react-keydown.svg)
+[comment]: <> ([![npm version]&#40;https://badge.fury.io/js/react-keydown.svg&#41;]&#40;https://badge.fury.io/js/react-keydown&#41;)
+[comment]: <> ([![dependencies]&#40;https://david-dm.org/glortho/react-keydown.svg&#41;]&#40;https://david-dm.org/glortho/react-keydown.svg&#41;)
 
 Use react-keydown as a higher-order component or decorator to pass keydown
 events to the wrapped component, or call methods directly via designated keys. Good

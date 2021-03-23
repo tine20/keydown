@@ -2,7 +2,7 @@
  * @module componentWrapper
  *
  */
-import React from 'react';
+// import React from 'react';
 
 import * as store from '../store';
 import { onMount, onUnmount } from '../event_handlers';
@@ -18,10 +18,10 @@ import { ALL_KEYS } from '../lib/keys';
  */
 function componentWrapper( WrappedComponent, keys = ALL_KEYS ) {
 
-  class KeyBoardHelper extends React.Component {
+  class KeyBoardHelper { //extends React.Component {
 
     constructor( props ) {
-      super( props );
+      // super( props );
       this.state = {
         event: null
       };
@@ -41,7 +41,7 @@ function componentWrapper( WrappedComponent, keys = ALL_KEYS ) {
     }
 
     render() {
-      return <WrappedComponent {...this.props} keydown={this.state} />;
+      // return <WrappedComponent {...this.props} keydown={this.state} />;
     }
   }
 

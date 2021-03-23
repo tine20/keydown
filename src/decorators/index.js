@@ -40,7 +40,7 @@ function _decorator( methodFn, ...args ) {
     // or component
     return ( target, methodName, descriptor ) => {
       return methodName ?
-        methodFn( { target, descriptor, keys } ) :
+        methodFn( { target, descriptor: Object.assign(descriptor, {value: target[methodName]}), keys } ) :
         classWrapper( target, keys );
     };
   } else {

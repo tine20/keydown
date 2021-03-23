@@ -39,6 +39,7 @@ export function _onKeyDown( event, forceConsider = false ) {
   if ( forceConsider || _shouldConsider( event ) ) {
     const { fn, instance } = store.findBindingForEvent( event ) || {};
     if ( fn ) {
+      event.preventDefault();
       fn.call( instance, event );
       return true;
     }

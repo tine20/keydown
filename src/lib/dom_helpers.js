@@ -2,10 +2,15 @@
  * @module domHelpers
  *
  */
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 const focusableSelector = 'a[href], button, input, object, select, textarea, [tabindex]';
 
+const ReactDOM = {
+  findDOMNode ( instance ) {
+    return instance.getEl().dom;
+  }
+}
 /**
  * bindFocusables: Find any focusable child elements of the component instance and
  * add an onFocus handler to focus our keydown handlers on the parent component
