@@ -8,7 +8,7 @@ const focusableSelector = 'a[href], button, input, object, select, textarea, [ta
 
 const ReactDOM = {
   findDOMNode ( instance ) {
-    return instance.getEl().dom;
+    return instance ? instance.getEl().dom : null;
   }
 }
 /**
